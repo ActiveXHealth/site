@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/sass/variables.scss">
   </head>
   <body class="body">
-    <nav class="navbar navbar-expand-lg" style="background-color: #e6e6e6;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #cddfd6;">
         
         <div class="container-fluid">
           <a class="navbar-brand" href="#">ActiveX</a>
@@ -41,10 +41,19 @@
                 </ul>
               </li>
             </ul>
-            <div>
-                <button class="btn btn-success " type="submit">Ingresar</button>
-              <button class="btn btn-outline-success" type="submit">Registrarse</button>
-              <a href="#"><img class="configIcon" src="/assets/img/gear.svg" alt=""></a>
+            <div class="contenedorsi">
+            <button class="btn btn-success" type="submit">Ingresar</button>
+            <button class="btn btn-outline-success" type="submit">Registrarse</button>
+              <ul class="dropdown d-flex align-items-center">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="configIcon" src="/assets/img/gear.svg" alt="">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Notificaciones</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Configuración</a></li>
+                </ul>
+              </ul>
             </div>
           </div>
         </div>

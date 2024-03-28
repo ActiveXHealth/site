@@ -4,6 +4,24 @@
 
 .configIcon {
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: -26px;
     width: 25px;
+    padding-bottom: 10px;
+    margin-bottom: -18px;
+}
+
+.nav-item:hover{
+    border-radius: 10px;
+    background-color: #bccec5;
+}
+
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contenedorsi{
+    align-items: center;
+    display: flex;
+    gap: 10px;
 }
