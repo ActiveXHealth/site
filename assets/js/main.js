@@ -30,6 +30,8 @@ const modoOscuro = () => {
     const btnIngresar = document.querySelector(".btnIngresar");
     const btnRegistrarse = document.querySelector(".btnRegistrarse");
     const navItem = document.querySelectorAll(".nav-link");
+    const configIcon = document.getElementById("configIcon");
+    configIcon.src = "/assets/img/gear_white.svg";
     document.body.classList.add("dark-mode");
     document.body.classList.remove("light-mode");
     navItem.forEach(item => {
@@ -48,6 +50,7 @@ const modoClaro = () => {
     const btnIngresar = document.querySelector(".btnIngresar");
     const btnRegistrarse = document.querySelector(".btnRegistrarse");
     const navItem = document.querySelectorAll(".nav-link");
+    configIcon.src = "/assets/img/gear.svg";
     document.body.classList.remove("dark-mode");
     document.body.classList.add("light-mode");
     navItem.forEach(item => {
