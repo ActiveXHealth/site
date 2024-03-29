@@ -76,12 +76,12 @@ const ingreso = () => {
     alert("*ingresa*");
 }
 
-const cambiarMenuConfig = () => {
-    toggle=!toggle;
-    const dropDown = document.querySelector(".dropdownsito");
-    if (toggle){
-        dropDown.classList.replace("dropdown-menu-end", "dropdown-menu");
+const estructurarConfigIcon = () => {
+    const canvas = document.getElementById("offcanvasNavbar");
+    const configIcon = document.querySelector(".dropdownsito");
+    if (canvas.classList.contains("show") || canvas.classList.contains("showing")){
+        configIcon.classList.remove("dropdown-menu-end")
     } else {
-        dropDown.classList.replace("dropdown-menu","dropdown-menu-end");
+        configIcon.classList.add("dropdown-menu-end");
     }
 }

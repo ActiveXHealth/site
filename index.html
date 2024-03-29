@@ -14,10 +14,10 @@
     <nav class="navbar navbar-expand-lg border-bottom navbar1 light-mode">
         <div class="container-fluid ">
           <a class="navbar-brand" href="#">ActiveX</a>
-          <button onclick="cambiarMenuConfig()" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <button onclick="estructurarConfigIcon()" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="max-width: 75%;">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ActiveX</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -56,7 +56,7 @@
               </div>
               <div>
                 <ul class="dropdown d-flex align-items-center">
-                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="estructurarConfigIcon() ">
                       <img id="configIcon" class="configIcon" src="assets/img/gear.svg" alt="">
                   </a>
                   <ul class="dropdownsito dropdown-menu dropdown-menu-end mt-4">
