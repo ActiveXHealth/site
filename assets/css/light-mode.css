@@ -1,0 +1,22 @@
+/*********LIGHT MODE*********/
+
+/*NAVBAR-LIGHTMODE*/
+.bodyy.light-mode{
+    background-color: rgb(210, 233, 221);
+}
+
+.navbar1.light-mode{
+    background-color: rgb(162, 216, 178);
+}
+
+.imgLuna.light-mode {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: -5px;
+    margin-bottom: 1px;
+    height: 21px;
+}
+
+.nav-item .light-mode:hover{
+    background-color: rgb(192, 226, 189);
+}

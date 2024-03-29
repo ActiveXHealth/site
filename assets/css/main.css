@@ -1,7 +1,7 @@
+/*******MAIN DESIGN******/
 .bodyy.dark-mode {
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(44, 47, 51);
 }
-
 .configIcon {
     cursor: pointer;
     margin-left: -26px;
@@ -28,13 +28,7 @@
     font-size: 17px;
 }
 
-.imgLuna.light-mode {
-    cursor: pointer;
-    margin-left: 10px;
-    margin-right: -5px;
-    margin-bottom: 1px;
-    height: 21px;
-}
+
 
 .imgLuna {
     cursor: pointer;
@@ -44,12 +38,10 @@
     height: 21px;
 }
 .nav-item .dark-mode:hover{
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(42, 47, 51);
 }
 
-.nav-item .light-mode:hover{
-    background-color: rgb(233, 233, 233);
-}
+
 
 .body .dark-mode{
     background-color: black;
@@ -62,6 +54,7 @@
 
 .btnLuna{
     margin-right: -15px;
+    border: none;
 }
 
 .imgLuna.dark-mode {
@@ -74,28 +67,40 @@
 
 .offcanvas.offcanvas-end.showing{
     .btnIngresar {
-        margin-top: 25px;
+        margin-top: 15px;
     }
 
     .btnRegistrarse {
-        margin-top: 25px;
+        margin-top: 10px;
     }
 
     .configIcon {
-        margin-top: 26px;
+        margin-top: 10px;
+    }
+
+    .contenedorsi{
+        display: grid;
     }
 }
 
 .offcanvas.offcanvas-end.show{
     .btnIngresar {
-        margin-top: 25px;
+        margin-top: 15px;
     }
 
     .btnRegistrarse {
-        margin-top: 25px;
+        margin-top: 10px;
     }
 
     .configIcon {
-        margin-top: 26px;
+        margin-top: 10px;
     }
+
+    .contenedorsi{
+        display: grid;
+    }
+}
+
+.botonLuna {
+    cursor: pointer;
 }

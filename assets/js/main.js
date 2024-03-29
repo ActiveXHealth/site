@@ -1,8 +1,11 @@
 var modoOscuroo = false;
+var toggle = false;
 const navItem = document.querySelectorAll(".nav-item");
     navItem.forEach(item => {
         item.classList.add("light-mode");
     });
+
+
 
 function modo() {
     modoOscuroo = !modoOscuroo;
@@ -60,8 +63,9 @@ const modoClaro = () => {
     btnIngresar.classList.replace("btn-outline-light","btn-outline-dark");
     btnRegistrarse.classList.replace("btn-outline-light","btn-outline-dark");
     navbar.setAttribute("data-bs-theme", "light");
+    navbar.removeAttribute("data-bs-theme");
     navbar.classList.remove("bg-dark");
-    navbar.classList.add("bg-light");
+    navbar.classList.add("light-mode");
 }
 
 const registro = () => {
@@ -70,4 +74,14 @@ const registro = () => {
 
 const ingreso = () => {
     alert("*ingresa*");
+}
+
+const cambiarMenuConfig = () => {
+    toggle=!toggle;
+    const dropDown = document.querySelector(".dropdownsito");
+    if (toggle){
+        dropDown.classList.replace("dropdown-menu-end", "dropdown-menu");
+    } else {
+        dropDown.classList.replace("dropdown-menu","dropdown-menu-end");
+    }
 }
