@@ -1,5 +1,5 @@
-.body {
-    background-color: rgb(241, 241, 241);
+.bodyy.dark-mode {
+    background-color: rgb(63, 63, 63);
 }
 
 .configIcon {
@@ -10,18 +10,60 @@
     margin-bottom: -18px;
 }
 
-.nav-item:hover{
-    border-radius: 10px;
-    background-color: #bccec5;
-}
+
 
 .nav-item {
+    border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 17px;
+}
+
+.nav-link{
+    border-radius: 10px;
 }
 
 .contenedorsi{
     align-items: center;
     display: flex;
     gap: 10px;
+    font-size: 17px;
+}
+
+.imgLuna.light-mode {
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: -5px;
+    margin-bottom: 1px;
+    height: 20px;
+}
+
+.nav-item .dark-mode:hover{
+    background-color: rgb(49, 49, 49);
+}
+
+.nav-item .light-mode:hover{
+    
+    background-color: rgb(202, 202, 202);
+}
+
+.body .dark-mode{
+    background-color: black;
+}
+
+.botonLuna {
+    display: flex;
+    gap: -1px;
+}
+
+.btnLuna{
+    margin-right: -13px;
+}
+
+.imgLuna.dark-mode {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: -5px;
+    margin-bottom: 1px;
+    height: 21px;
 }
