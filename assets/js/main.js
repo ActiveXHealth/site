@@ -79,9 +79,15 @@ const ingreso = () => {
 const estructurarConfigIcon = () => {
     const canvas = document.getElementById("offcanvasNavbar");
     const configIcon = document.querySelector(".dropdownsito");
-    if (canvas.classList.contains("show") || canvas.classList.contains("showing")){
-        configIcon.classList.remove("dropdown-menu-end")
-    } else {
+
+    // Agregar un oyente de eventos para detectar cuando el offcanvas se cierra completamente
+    canvas.addEventListener('hidden.bs.offcanvas', function () {
         configIcon.classList.add("dropdown-menu-end");
+        canvas.style.maxWidth = "100%"; // Establecer maxWidth en 100% cuando se cierra el offcanvas
+    });
+
+    if (canvas.classList.contains("show") || canvas.classList.contains("showing")) {
+        configIcon.classList.remove("dropdown-menu-end");
+        canvas.style.maxWidth = "75%";
     }
 }
