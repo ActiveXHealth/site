@@ -32,19 +32,25 @@
 
 .imgLuna.light-mode {
     cursor: pointer;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-right: -5px;
     margin-bottom: 1px;
-    height: 20px;
+    height: 21px;
 }
 
+.imgLuna {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: -5px;
+    margin-bottom: 1px;
+    height: 21px;
+}
 .nav-item .dark-mode:hover{
     background-color: rgb(49, 49, 49);
 }
 
 .nav-item .light-mode:hover{
-    
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(233, 233, 233);
 }
 
 .body .dark-mode{
@@ -57,7 +63,7 @@
 }
 
 .btnLuna{
-    margin-right: -13px;
+    margin-right: -15px;
 }
 
 .imgLuna.dark-mode {

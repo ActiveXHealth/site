@@ -20,7 +20,7 @@ function modo() {
         const imgLuna = document.getElementById("imgLuna");
         imgLuna.classList.add("light-mode");
         imgLuna.classList.remove("dark-mode");
-        imgLuna.src="/assets/img/moon-fill.svg";
+        imgLuna.src="/assets/img/moon.svg";
         btnLuna.textContent = "Modo Oscuro";
     }
 }
