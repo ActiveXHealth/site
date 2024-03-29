@@ -11,7 +11,7 @@ function modo() {
         const imgLuna = document.getElementById("imgLuna");
         imgLuna.classList.add("dark-mode");
         imgLuna.classList.remove("light-mode");
-        imgLuna.src="/assets/img/sun.svg";
+        imgLuna.src="assets/img/sun.svg";
         btnLuna.textContent = "Modo Claro";
         modoOscuro();
     } else {
@@ -20,7 +20,7 @@ function modo() {
         const imgLuna = document.getElementById("imgLuna");
         imgLuna.classList.add("light-mode");
         imgLuna.classList.remove("dark-mode");
-        imgLuna.src="/assets/img/moon.svg";
+        imgLuna.src="assets/img/moon.svg";
         btnLuna.textContent = "Modo Oscuro";
     }
 }
@@ -31,7 +31,7 @@ const modoOscuro = () => {
     const btnRegistrarse = document.querySelector(".btnRegistrarse");
     const navItem = document.querySelectorAll(".nav-link");
     const configIcon = document.getElementById("configIcon");
-    configIcon.src = "/assets/img/gear_white.svg";
+    configIcon.src = "assets/img/gear_white.svg";
     document.body.classList.add("dark-mode");
     document.body.classList.remove("light-mode");
     navItem.forEach(item => {
@@ -50,7 +50,7 @@ const modoClaro = () => {
     const btnIngresar = document.querySelector(".btnIngresar");
     const btnRegistrarse = document.querySelector(".btnRegistrarse");
     const navItem = document.querySelectorAll(".nav-link");
-    configIcon.src = "/assets/img/gear.svg";
+    configIcon.src = "assets/img/gear.svg";
     document.body.classList.remove("dark-mode");
     document.body.classList.add("light-mode");
     navItem.forEach(item => {
