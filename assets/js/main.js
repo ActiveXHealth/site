@@ -6,7 +6,6 @@ const navItem = document.querySelectorAll(".nav-item");
     });
 
 
-
 function modo() {
     modoOscuroo = !modoOscuroo;
     if (modoOscuroo) {
