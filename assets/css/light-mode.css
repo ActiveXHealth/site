@@ -2,11 +2,11 @@
 
 /*NAVBAR-LIGHTMODE*/
 .bodyy.light-mode{
-    background-color: rgb(182, 212, 197);
+    background-color: rgb(243, 243, 243);
 }
 
 .navbar1.light-mode{
-    background-color: rgba(214, 247, 224, 0);
+    background-color: rgba(255, 255, 255, 0.966);
 }
 
 .imgLuna.light-mode {
@@ -18,5 +18,5 @@
 }
 
 .nav-item .light-mode:hover{
-    background-color: rgb(192, 226, 189);
+    background-color: rgb(243, 243, 243);
 }

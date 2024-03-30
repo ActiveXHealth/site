@@ -1,9 +1,9 @@
+var modoOscuroo = true;
 window.addEventListener('load', function() {
     // Llamar a la función cuando todos los recursos (incluyendo imágenes y scripts) estén completamente cargados
     modoOscuro();
   });
-var modoOscuroo = false;
-var toggle = false;
+var toggle = true;
 const navItem = document.querySelectorAll(".nav-item");
     navItem.forEach(item => {
         item.classList.add("light-mode");
@@ -37,6 +37,10 @@ const modoOscuro = () => {
     const btnRegistrarse = document.querySelector(".btnRegistrarse");
     const navItem = document.querySelectorAll(".nav-link");
     const configIcon = document.getElementById("configIcon");
+    const cards = document.querySelectorAll(".card");
+    const cardTitles = document.querySelectorAll(".card-title");
+    const cardsTexts = document.querySelectorAll(".card-text");
+    const saludo = document.querySelector(".saludo");
     configIcon.src = "assets/img/gear_white.svg";
     document.body.classList.add("dark-mode");
     document.body.classList.remove("light-mode");
@@ -44,6 +48,17 @@ const modoOscuro = () => {
         item.classList.add("dark-mode");
         item.classList.remove("light-mode");
     });
+    cards.forEach(item => {
+        item.classList.remove("bg-light");
+        item.classList.add("bg-dark");
+    });
+    cardTitles.forEach(item => {
+        item.setAttribute("style","color:white;");
+    });
+    cardsTexts.forEach(item => {
+        item.setAttribute("style","color:white;");
+    });
+    saludo.setAttribute("style","color:white;")
     btnIngresar.classList.replace("btn-outline-dark", "btn-outline-light");
     btnRegistrarse.classList.replace("btn-outline-dark", "btn-outline-light");
     navbar.setAttribute("data-bs-theme", "dark");
@@ -56,6 +71,10 @@ const modoClaro = () => {
     const btnIngresar = document.querySelector(".btnIngresar");
     const btnRegistrarse = document.querySelector(".btnRegistrarse");
     const navItem = document.querySelectorAll(".nav-link");
+    const cards = document.querySelectorAll(".card");
+    const cardTitles = document.querySelectorAll(".card-title");
+    const cardsTexts = document.querySelectorAll(".card-text");
+    const saludo = document.querySelector(".saludo");
     configIcon.src = "assets/img/gear.svg";
     document.body.classList.remove("dark-mode");
     document.body.classList.add("light-mode");
@@ -63,6 +82,17 @@ const modoClaro = () => {
         item.classList.remove("dark-mode");
         item.classList.add("light-mode");
     });
+    cards.forEach(item => {
+        item.classList.remove("bg-dark");
+        item.classList.add("bg-light");
+    });
+    cardTitles.forEach(item => {
+        item.setAttribute("style","'color:black;'");
+    });
+    cardsTexts.forEach(item => {
+        item.setAttribute("style","'color:black;'");
+    });
+    saludo.setAttribute("style","'color:black;'")
     btnIngresar.classList.replace("btn-outline-light","btn-outline-dark");
     btnRegistrarse.classList.replace("btn-outline-light","btn-outline-dark");
     navbar.setAttribute("data-bs-theme", "light");
