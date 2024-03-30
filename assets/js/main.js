@@ -1,3 +1,7 @@
+window.addEventListener('load', function() {
+    // Llamar a la función cuando todos los recursos (incluyendo imágenes y scripts) estén completamente cargados
+    modoOscuro();
+  });
 var modoOscuroo = false;
 var toggle = false;
 const navItem = document.querySelectorAll(".nav-item");
