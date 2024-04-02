@@ -28,8 +28,6 @@
     font-size: 17px;
 }
 
-
-
 .imgLuna {
     cursor: pointer;
     margin-left: 10px;
@@ -67,11 +65,11 @@
 
 .offcanvas.offcanvas-end.showing{
     .btnIngresar {
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .btnRegistrarse {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     .configIcon {
@@ -79,7 +77,7 @@
     }
 
     .contenedorsi{
-        display: grid;
+        display: flex;
     }
 }
 
@@ -89,18 +87,19 @@
     }
 
     .btnRegistrarse {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     .configIcon {
-        margin-top: 10px;
+        margin-top: 18px;
     }
 
     .contenedorsi{
-        display: grid;
+        display: flex;
     }
 }
 
 .botonLuna {
     cursor: pointer;
 }
+

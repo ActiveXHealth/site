@@ -124,3 +124,13 @@ const estructurarConfigIcon = () => {
         canvas.style.maxWidth = "75%";
     }
 }
+
+
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+const brua = () => {
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+    toastBootstrap.show()
+}
+  
