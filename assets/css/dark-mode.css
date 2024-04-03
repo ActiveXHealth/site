@@ -1,0 +1,15 @@
+
+.nav-item .dark-mode:hover{
+    background-color: rgb(42, 47, 51);
+}
+
+.imgLuna.dark-mode {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: -5px;
+    margin-bottom: 1px;
+    height: 21px;
+}
+.tituloComida.dark-mode {
+    color: rgb(255, 255, 255);
+ }

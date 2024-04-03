@@ -50,7 +50,7 @@
                 </ul>
               </li>
             </ul>
-            <div class="contenedorsi">
+            <div class="contenedorsi d-flex">
               <div>
                 <button class="btn btn-outline-dark btnIngresar" type="submit" onclick="ingreso()">Sign In</button>
               </div>
@@ -90,18 +90,396 @@
         <!--Dashboard-->
         <div class="container-fluid" style="gap: 15px;display:flex;">
           <div class="container-fluid text-center" style="gap: 15px;">
-            <div class="row" style="gap: 10px;margin-bottom: 15px;" >
-              <div class="col-xl-5 col-sm-12 bg-primary" style="color: white;height: 500px;border-radius: 10px;">col</div>
-              <div class="col bg-danger"style="color: white;height: 500px;border-radius: 10px;">col</div>
+            <div class="row" style="gap: 10px;margin-bottom: 20px;" >
+              <!--COMIDA DEL DÍA-->
+              <div class="col-xl-6 col-sm-12 bg-dark" style="color: white;height: auto;border-radius: 10px;font-size: 20px;">
+              <div class="tituloApartado">
+                <h2 class="mb-3 mt-3 bg-success rounded text-center b-2 pt-1 pb-2" >
+                  Comidas para  hoy
+                </h2>
+              </div>
+              <!--DESAYUNO-->
+              <div class="comida mt-4">
+                <div class="cuerpoApartado h-auto w-auto rounded" style="margin-left: 15px;">
+                  <div class="desayunoTit d-flex" style="gap:10px">
+                    <h4 class="text-start rounded pt-1 pb-2 sm-w-5" style="background-color: rgb(60, 63, 68);padding-left: 20px;padding-right: 20px;">
+                      Desayuno
+                    </h4>
+                    <h4 class="text-start rounded pt-1 pb-2 sm-w-5" style="background-color: rgba(60, 63, 68, 0.418);padding-left: 20px;padding-right: 20px;">
+                      7:00 a.m
+                    </h4>
+                  </div>
+                  <div class="desayunoCont d-flex align-items-center">
+                    <div class="desayunoRec d-flex rounded" style="gap: 20px; background-color: rgb(84, 194, 84);width:max-content;">
+                      <h5 class="text-start mt-3" style="padding-left: 20px;padding-right: 20px;">
+                        <ul>
+                          <li class="mt-1">
+                            Tortitas de avena con plátano y miel
+                          </li>
+                          <li class="mt-1">
+                            1 Porción de frutas frescas
+                          </li>
+                        </ul>
+                      </h5>
+                    </div>
+                    <div class="d-flex align-items-center" style="gap: 10px;margin-left: 20px;">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required style="width: 35px;height: 34px;margin-top: 11px;">
+                      <label class="form-check-label" for="invalidCheck2"></label>
+                      <p class="text-center rounded pt-1 pb-1" style="background-color: rgba(57, 68, 57, 0.322); width: 80px;height: max-content; margin-bottom: -9px;">
+                        300 kcal
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--ALMUERZO-->
+              <div class="comida mt-4">
+                <div class="cuerpoApartado h-auto w-auto rounded" style="margin-left: 15px;">
+                  <div class="desayunoTit d-flex" style="gap:10px">
+                    <h4 class="text-start rounded pt-1 pb-2" style="background-color: rgb(60, 63, 68); width: max-content;padding-left: 20px;padding-right: 20px;">
+                      Almuerzo
+                    </h4>
+                    <h4 class="text-start rounded pt-1 pb-2" style="background-color: rgba(60, 63, 68, 0.418); width: max-content;padding-left: 18px;padding-right: 18px;">
+                      12:00 p.m
+                    </h4>
+                  </div>
+                  <div class="desayunoCont d-flex align-items-center">
+                    <div class="desayunoRec d-flex rounded" style="gap: 20px; background-color: rgb(67, 158, 67);width:max-content; max-width: 80%;">
+                      <h5 class="text-start mt-3" style="padding-left: 20px;padding-right: 20px;">
+                        <ul>
+                          <li class="mt-1">
+                            Ensalada de quinoa con verduras mixtas y pollo a la parrilla
+                          </li>
+                          <li class="mt-1">
+                            1 Porción de frutas frescas
+                          </li>
+                        </ul>
+                      </h5>
+                    </div>
+                    <div class="d-flex align-items-center" style="gap: 10px;margin-left: 20px;">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required style="width: 35px;height: 34px;margin-top: 11px;">
+                      <label class="form-check-label" for="invalidCheck2"></label>
+                      <p class="text-center rounded pt-1 pb-1" style="background-color: rgba(57, 68, 57, 0.322); width: 80px;height: max-content; margin-bottom: -9px;">
+                        600 kcal
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--MERIENDA-->
+              <div class="comida mt-4">
+                <div class="cuerpoApartado h-auto w-auto rounded" style="margin-left: 15px;">
+                  <div class="desayunoTit d-flex" style="gap:10px">
+                    <h4 class="text-start rounded pt-1 pb-2" style="background-color: rgb(60, 63, 68); width: max-content;padding-left: 20px;padding-right: 20px;">
+                      Merienda
+                    </h4>
+                    <h4 class="text-start rounded pt-1 pb-2" style="background-color: rgba(60, 63, 68, 0.418); width: max-content;padding-left: 20px;padding-right: 20px;">
+                      3:30 p.m
+                    </h4>
+                  </div>
+                  <div class="desayunoCont d-flex align-items-center">
+                    <div class="desayunoRec d-flex rounded" style="gap: 20px; background-color: rgb(46, 112, 46);width:max-content; max-width: 80%;">
+                      <h5 class="text-start mt-3" style="padding-left: 20px;padding-right: 20px;">
+                        <ul>
+                          <li class="mt-1">
+                            Yogur griego con trozos de manzana y una cucharada de miel
+                          </li>
+                          <li class="mt-1">
+                            Barrita de proteína
+                          </li>
+                        </ul>
+                      </h5>
+                    </div>
+                    <div class="d-flex align-items-center" style="gap: 10px;margin-left: 20px;">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required style="width: 35px;height: 34px;margin-top: 11px;">
+                      <label class="form-check-label" for="invalidCheck2"></label>
+                      <p class="text-center rounded pt-1 pb-1" style="background-color: rgba(57, 68, 57, 0.322); width: 80px;height: max-content; margin-bottom: -9px;">
+                        400 kcal
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--CENA-->
+              <div class="comida mt-4">
+                <div class="cuerpoApartado h-auto w-auto rounded" style="margin-left: 15px;">
+                  <div class="desayunoTit d-flex" style="gap:10px">
+                    <h4 class="text-start rounded pt-1 pb-2" style="background-color: rgb(60, 63, 68); width: max-content;padding-left: 20px;padding-right: 20px;">
+                      Cena
+                    </h4>
+                    <h4 class="text-start rounded pt-1 pb-2" style="background-color: rgba(60, 63, 68, 0.418); width: max-content;padding-left: 20px;padding-right: 20px;">
+                      7:00 p.m
+                    </h4>
+                  </div>
+                  <div class="desayunoCont d-flex align-items-center">
+                    <div class="desayunoRec d-flex rounded" style="gap: 20px; background-color: rgb(32, 71, 32);width:max-content; max-width: 80%;">
+                      <h5 class="text-start mt-3" style="padding-left: 20px;padding-right: 20px;">
+                        <ul>
+                          <li class="mt-1">
+                            Salmón al horno con espárragos y batata asada
+                          </li>
+                        </ul>
+                      </h5>
+                    </div>
+                    <div class="d-flex align-items-center" style="gap: 10px;margin-left: 20px;">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required style="width: 35px;height: 34px;margin-top: 11px;">
+                      <label class="form-check-label" for="invalidCheck2"></label>
+                      <p class="text-center rounded pt-1 pb-1" style="background-color: rgba(57, 68, 57, 0.322); width: 80px;height: max-content; margin-bottom: -9px;">
+                        500 kcal
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--ENERGÍA TOTAL-->
+              <div class="pieDeApartado">
+                <h3 class="mb-4 mx-auto rounded text-center pt-1 pb-2 mt-3" style="color: rgb(216, 216, 216); background-color: rgba(221, 221, 221, 0.041);width: max-content;padding-left: 10px;padding-right: 10px;">Energía total: 1800 kcal</h3>
+              </div>
+              </div>
+
+
+              <!--RUTINA DEL DÍA-->
+              <div class="col bg-dark"style="color: white;height: auto;border-radius: 10px;font-size: 20px;">
+                <div>
+                  <h2 class="mb-3 mt-3 bg-danger rounded pb-2 pt-1">
+                    Rutina del día
+                  </h2>
+                  <h3 class="mb-4 mx-auto rounded text-center pt-1 pb-2" style="color: rgb(216, 216, 216); background-color: rgba(221, 221, 221, 0.041);width: 40%;">Pecho, hombros y tríceps</h3>
+                </div>
+                <div class="container-Rutina"></div>
+                 <div class="">
+                  <div id="carouselExample" class="carousel slide d-flex">
+                    <div class="carousel-inner d-flex">
+                      <!--EJERCICIO 1-->
+                      <div class="carousel-item active">
+                        <div class="d-flex justify-content-center" style="gap: 10px;">
+                          <img src="assets/img/ejercicios/press500.jpg" class="d-flex mb-4" alt="..." style="width: 45%;border-radius: 20px;height: 60%;">
+                        <div class="card cardTrainer bg-dark d-flex " style="border-radius: 10px; width: 45%;height: 100%;">
+                          <div class="card-body" >
+                            <h5 class="card-title1" style="color: white;">Press de banca</h5>
+                            <p></p>
+                            <h5 class="card-title" style="color: white;">Series</h5>
+                            <div style="text-align: center;gap: 10px;">
+                              <p class="card-text" style="color: white;">- 12 repeticiones
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                </label></p>
+                              <p class="card-text" style="color: white;">- 10 repeticiones
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                </label></p>
+                              
+                              <p class="card-text" style="color: white;">- 10 repeticiones 
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                </label></p>
+                              <p class="card-text" style="color: white;">- 10 repeticiones
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                </label></p>
+                            </div>
+                            <p></p>
+                            <p class="card-text1" style="color: rgb(161, 161, 161);font-size: 17px;">Descansos entre series: 50s</p>
+                            <p class="card-text1" style="color: rgb(161, 161, 161);font-size: 15px;">Recuerda aumentar el peso ligeramente en cada serie*</p>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=jlFl7WJ1TzI" class="btn btn-secondary" style="color: white;">¿Necesitas ayuda?
+                            </a>                  
+                            <button class="btn bg-success" style="color: white;">¡Hecho!</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="d-flex justify-content-center" style="gap: 10px;">
+                          <img src="assets/img/ejercicios/press500.jpg" class="d-flex mb-4" alt="..." style="width: 45%;border-radius: 20px;height: 60%;">
+                        <div class="card cardTrainer bg-dark d-flex " style="border-radius: 10px; width: 45%;height: 100%;">
+                          <div class="card-body" >
+                            <h5 class="card-title1" style="color: white;">Press de banca</h5>
+                            <p></p>
+                            <h5 class="card-title" style="color: white;">Series</h5>
+                            <div style="text-align: center;gap: 10px;">
+                              <p class="card-text" style="color: white;">- 12 repeticiones
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                </label></p>
+                              <p class="card-text" style="color: white;">- 10 repeticiones
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                </label></p>
+                              
+                              <p class="card-text" style="color: white;">- 10 repeticiones 
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                </label></p>
+                              <p class="card-text" style="color: white;">- 10 repeticiones
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                </label></p>
+                            </div>
+                            <p></p>
+                            <p class="card-text1" style="color: rgb(161, 161, 161);font-size: 17px;">Descansos entre series: 50s</p>
+                            <p class="card-text1" style="color: rgb(161, 161, 161);font-size: 15px;">Recuerda aumentar el peso ligeramente en cada serie*</p>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=jlFl7WJ1TzI" class="btn btn-danger" style="color: white;">¿Necesitas ayuda?
+                            </a>                  
+                            <button class="btn bg-success" style="color: white;">¡Hecho!</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="d-flex justify-content-center" style="gap: 10px;">
+                          <img src="assets/img/ejercicios/press500.jpg" class="d-flex mb-4" alt="..." style="width: 45%;border-radius: 20px;height: 60%;">
+                        <div class="card cardTrainer bg-dark d-flex " style="border-radius: 10px; width: 45%;height: 100%;">
+                          <div class="card-body" >
+                            <h5 class="card-title1" style="color: white;">Press de banca</h5>
+                            <p></p>
+                            <h5 class="card-title" style="color: white;">Series</h5>
+                            <div style="text-align: center;gap: 10px;">
+                              <p class="card-text" style="color: white;">- 12 repeticiones
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                </label></p>
+                              <p class="card-text" style="color: white;">- 10 repeticiones
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                </label></p>
+                              
+                              <p class="card-text" style="color: white;">- 10 repeticiones 
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                </label></p>
+                              <p class="card-text" style="color: white;">- 10 repeticiones
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                </label></p>
+                            </div>
+                            <p></p>
+                            <p class="card-text1" style="color: rgb(161, 161, 161);font-size: 17px;">Descansos entre series: 50s</p>
+                            <p class="card-text1" style="color: rgb(161, 161, 161);font-size: 15px;">Recuerda aumentar el peso ligeramente en cada serie*</p>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=jlFl7WJ1TzI" class="btn btn-danger" style="color: white;">¿Necesitas ayuda?
+                            </a>                  
+                            <button class="btn bg-success" style="color: white;">¡Hecho!</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="OpcionesPie container-fluid">
+                  <div class="card cardTrainer bg-dark">
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: white;">Explora tus rutinas de la semana</h5>
+                      <p class="card-text" style="color: white;">Hemos generado 4 rutinas para tu semana enfocadas a tus objetivos, con las que trabajaras distintos grupos musculares. ¿Por qué no les echas un vistazo? ¡Da clic en el botón de abajo para verlas!</p>
+                      <a href="trainers.html" class="btn btn-danger">¡Explora tus rutinas!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row"style="gap: 10px;margin-bottom: 40px;">
-              <div class="col-xl-7 col-sm-12 bg-warning"style="color: white;height: 300px;border-radius: 10px;">col-8</div>
-              <div class="col bg-success"style="color: white;height: 300px;border-radius: 10px;">col-4</div>
+            <!-- OBJETIVOS -->
+            <div class=" row"style="gap: 10px;margin-bottom: 40px;">
+              <div class="col-xl-7 col-sm-12 bg-dark"style="color: white;height: auto;border-radius: 10px;font-size: 20px;">
+              <h2 class="mt-3 mb-3 bg-warning rounded pt-1 pb-2">
+                Objetivos
+              </h2>
+              <div class="objetivo">
+                <h4 class="text-start" style="">
+                  Peso
+                </h4>
+              </div>
+              
+              </div>
+              <!-- PROGRESO -->
+              <div class="col bg-dark"style="color: white;height: auto;border-radius: 10px;font-size: 20px;">
+                <h2 class="mt-3 mb-3 bg-primary rounded pt-1 pb-2">
+                  Progreso
+                </h2>
+                <div class="objetivo mb-3">
+                  <h4 class="text-start">
+                    Peso
+                  </h4>
+                  <div class="container-fluid d-flex" style="gap: 0px;">
+                    <div class="" style="width: max-content;">
+                      <p class="text-start">
+                        84 kg
+                      </p>
+                    </div>
+                    <div class="container-fluid mt-2" style="width: 80%;">
+                      <div class="progress w-100" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-primary" style="width: 60%">60%</div>
+                      </div>
+                    </div>
+                    <div class="" style="width: max-content;">
+                      <p class="text-start">
+                        60 kg
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="objetivo mb-3">
+                  <div class="nombreObj d-flex justify-content-between">
+                    <h4 class="text-start">
+                      Racha
+                    </h4>
+                    <h4 class="text-end" style="color: rgb(255, 230, 0);">
+                      Record: 4 sem.
+                    </h4>
+                  </div>
+                  <div class="container-fluid d-flex" style="gap: 0px;">
+                    <div class="" style="width: 8%;">
+                      <p class="text-start">
+                        2 sem.
+                      </p>
+                    </div>
+                    <div class="container-fluid mt-2" style="width: 80%;">
+                      <div class="progress w-100" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-warning" style="width: 30%">30%</div>
+                      </div>
+                    </div>
+                    <div class="" style="width: 8%;">
+                      <p class="text-start">
+                        3 sem.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="objetivo mb-3">
+                  <h4 class="text-start">
+                    PR Press banca
+                  </h4>
+                  <div class="container-fluid d-flex" style="gap: 0px;">
+                    <div class="" style="width: 8%;">
+                      <p class="text-start">
+                        30kg
+                      </p>
+                    </div>
+                    <div class="container-fluid mt-2" style="width: 80%;">
+                      <div class="progress w-100" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-danger" style="width: 80%">80%</div>
+                      </div>
+                    </div>
+                    <div class="" style="width: 8%;">
+                      <p class="text-start">
+                        100kg
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                </div>
             </div>
           </div>
         </div>
         <!--Opciones finales-->
-        <div class="container-fluid" style="width: 100%; display: flex;" >
+        <div class="container-fluid mb-4" style="width: 100%; display: flex;" >
           <div class="row">
             <div class="col-sm-6 mb-3 mb-sm-0">
               <div class="card cardTrainer bg-dark">
@@ -124,8 +502,9 @@
           </div>
         </div>
       </div>
-      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
 </div>
+
+
       
       <!--BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
