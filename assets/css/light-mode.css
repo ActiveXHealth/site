@@ -2,7 +2,7 @@
 
 /*NAVBAR-LIGHTMODE*/
 .bodyy.light-mode{
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(243, 243, 243);
 }
 
 .navbar1.light-mode{
@@ -19,4 +19,12 @@
 
 .nav-item .light-mode:hover{
     background-color: rgb(243, 243, 243);
+}
+
+.contComidas.light-mode {
+    background-color: rgb(204, 204, 204);
+}
+
+.contRutina.light-mode {
+    background-color: rgb(204, 204, 204);
 }

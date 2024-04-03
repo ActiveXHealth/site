@@ -41,6 +41,15 @@ const modoOscuro = () => {
     const cardTitles = document.querySelectorAll(".card-title");
     const cardsTexts = document.querySelectorAll(".card-text");
     const saludo = document.querySelector(".saludo");
+    const titComida = document.querySelector(".tituloComida");
+    const contComidas = document.querySelector(".contComidas");
+    const contRutina = document.querySelector(".contRutina");
+    contRutina.classList.add("bg-dark");
+    contRutina.classList.remove("light-mode");
+    contComidas.classList.add("bg-dark")
+    contComidas.classList.remove("bg-light")
+    titComida.classList.add("dark-mode");
+    titComida.classList.remove("light-mode");   
     configIcon.src = "assets/img/gear_white.svg";
     document.body.classList.add("dark-mode");
     document.body.classList.remove("light-mode");
@@ -75,6 +84,12 @@ const modoClaro = () => {
     const cardTitles = document.querySelectorAll(".card-title");
     const cardsTexts = document.querySelectorAll(".card-text");
     const saludo = document.querySelector(".saludo");
+    const contComidas = document.querySelector(".contComidas");
+    const contRutina = document.querySelector(".contRutina");
+    contRutina.classList.remove("bg-dark");
+    contRutina.classList.add("light-mode");
+    contComidas.classList.remove("bg-dark")
+    contComidas.classList.add("light-mode")
     configIcon.src = "assets/img/gear.svg";
     document.body.classList.remove("dark-mode");
     document.body.classList.add("light-mode");

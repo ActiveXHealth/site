@@ -2,6 +2,7 @@
 .bodyy.dark-mode {
     background-color: rgb(44, 47, 51);
 }
+
 .configIcon {
     cursor: pointer;
     margin-left: -26px;
@@ -35,15 +36,6 @@
     margin-bottom: 1px;
     height: 21px;
 }
-.nav-item .dark-mode:hover{
-    background-color: rgb(42, 47, 51);
-}
-
-
-
-.body .dark-mode{
-    background-color: black;
-}
 
 .botonLuna {
     display: flex;
@@ -53,14 +45,6 @@
 .btnLuna{
     margin-right: -15px;
     border: none;
-}
-
-.imgLuna.dark-mode {
-    cursor: pointer;
-    margin-left: 10px;
-    margin-right: -5px;
-    margin-bottom: 1px;
-    height: 21px;
 }
 
 .offcanvas.offcanvas-end.showing{
@@ -103,3 +87,41 @@
     cursor: pointer;
 }
 
+.textoReceta {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+}
+
+.tituloComida {
+    color: white;
+}
+
+.comidaNombre {
+    background-color: rgb(60, 63, 68);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.comidaHora {
+    background-color: rgba(60, 63, 68, 0.418);
+    padding-left: 15px;
+    padding-right: 15px;
+    width: max-content;
+}
+
+.textoCalorias {
+    font-size: 20px;
+   
+}
+
+.checkComida {
+    width: 35px;height: 34px;margin-top: -15px;
+}
+
+.nombreRutinaDia {
+    background-color: rgba(0, 0, 0, 0.281);
+    width: max-content;
+    padding-right: 7px;
+    padding-left: 7px;
+}
