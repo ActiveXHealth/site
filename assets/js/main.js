@@ -1,5 +1,13 @@
 var modoOscuroo = true;
 window.addEventListener('load', function() {
+    var nombre = this.prompt("¿Cómo te llamas?");
+    const saludo = this.document.querySelector(".saludo");
+    if (nombre == 0){
+        saludo.textContent = "Hola de nuevo, lunita";
+    } else {
+        saludo.textContent = "Hola de nuevo, "+nombre;
+    }
+    
     // Llamar a la función cuando todos los recursos (incluyendo imágenes y scripts) estén completamente cargados
     modoOscuro();
   });
