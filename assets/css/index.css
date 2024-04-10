@@ -1,0 +1,114 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.btnSignIn {
+    color: var(--azul);
+    text-decoration: none;
+    font-size: 16;
+}
+
+.btnSignUp{
+    border-radius: 15px;
+    color: white;
+    background-color: var(--azul);
+    border: none;
+    box-shadow:2px 3px 5px rgba(82, 82, 82, 0.377);
+}
+
+.sesionBtns {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbarsita {
+    background-color: var(--blanco-primary);
+}
+
+.btnTemaOscuro {
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.imgLuna {
+    height: 30px;
+    margin-bottom: 2.5px;
+}
+
+.containerPresentacion {
+    background-image: linear-gradient(to bottom, var(--azul), rgb(62,132,136));
+}
+
+.saly1 {
+    padding-left: 12%;
+}
+
+.colPresentacion {
+    padding-top: 100px;
+}
+
+.presentacion {
+    font-family: "Poppins", sans-serif; 
+    font-size: 61px;
+    color: var(--blanco-primary);
+    width: 100%; /* Cambia el ancho fijo por uno relativo */
+}
+
+
+.colPresentacion .presentacion::first-word {
+    color: blue;
+}
+
+.btnEmpiezaAhora {
+    border-radius: 20px;
+    color: white;
+    background-color: var(--morado-intermedio);
+    border: none;
+    font-size: 16px;
+    box-shadow:2px 3px 5px rgba(82, 82, 82, 0.377);
+}
+
+.primerPalabra {
+    color: rgb(166, 234, 249);
+}
+
+.btnMasInfo {
+        border-radius: 20px;
+        color: var(--morado-intermedio);
+        font-weight: 500;
+        background-color: var(--blanco-primary);
+        border: none;
+        font-size: 16px;
+        box-shadow:2px 3px 5px rgba(82, 82, 82, 0.377);
+}
+@media (max-width: 1500px){
+    .colSaly1 {
+        display: none;
+    }
+    .saly1 {
+        display: none;
+    }
+    .colPresentacion {
+        background-image: linear-gradient(to bottom, var(--azul), rgb(62,132,136));
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .containerPresentacion {
+        width: 100%;
+    }
+    .presentacion{
+        font-size: 40px;
+        padding-left: 10%;
+    }
+
+}
+
+
+:root {
+    --azul: rgb(87, 183, 189);
+    --blanco-primary: rgb(248, 249, 255);
+    --morado-intermedio: rgb(148,119,231);
+}

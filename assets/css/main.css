@@ -1,127 +1,181 @@
-/*******MAIN DESIGN******/
-.bodyy.dark-mode {
-    background-color: rgb(44, 47, 51);
-}
+body {
+    height: 100vh;
+    display: flex;
+    margin: 0; /* Agregar margen cero para evitar espacios innecesarios */
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .colMorada {
+    width: 38%;
+    background-color: rgb(204, 191, 255);
+    position: relative;
+    height: 100%;
+  }
+  
+  .colBlanca {
+    width: 62%;
+    background-color: var(--blanco-primary);
+    position: relative;
+    height: 100vh;
+  }
+  
+  .container-login {
+    border-radius: 40px;
+    background-color: white;
+    position: absolute;
+    width: 80%; 
+    max-width: 400px; 
+    height: max-content;
+    min-height: max-content;
+    max-width: max-content;
+    top: 10%; 
+    left: 23%;
+    box-shadow: 0 4px 35px rgba(2, 2, 2, 0.089);
+    padding: 20px;
+    display: flex;
+  }
+  
+  .encabezadoLogin {
+    padding-top: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-right: 25px;
+  }
 
-.configIcon {
-    cursor: pointer;
-    margin-left: -26px;
-    width: 25px;
-    padding-bottom: 10px;
-    margin-bottom: -21px;
-}
+  .saludoLogin {
+    font-size: 20px; 
+    font-weight: 500;   
+  }
 
-.nav-item {
-    border-radius: 10px;
+  .preguntaLogin {
+    font-size: 16px;
     padding-left: 10px;
-    padding-right: 10px;
-    font-size: 17px;
-}
+    max-width: 60%;
+  }
 
-.nav-link{
-    border-radius: 10px;
-}
-
-.contenedorsi{
-    align-items: center;
-    display: flex;
-    gap: 10px;
-    font-size: 17px;
-}
-
-.imgLuna {
-    cursor: pointer;
-    margin-left: 10px;
-    margin-right: -5px;
-    margin-bottom: 1px;
-    height: 21px;
-}
-
-.botonLuna {
-    display: flex;
-    gap: -1px;
-}
-
-.btnLuna{
-    margin-right: -15px;
-    border: none;
-}
-
-.offcanvas.offcanvas-end.showing{
-    .btnIngresar {
-        margin-top: 10px;
-    }
-
-    .btnRegistrarse {
-        margin-top: 15px;
-    }
-
-    .configIcon {
-        margin-top: 10px;
-    }
-
-    .contenedorsi{
-        display: flex;
-    }
-}
-
-.offcanvas.offcanvas-end.show{
-    .btnIngresar {
-        margin-top: 15px;
-    }
-
-    .btnRegistrarse {
-        margin-top: 15px;
-    }
-
-    .configIcon {
-        margin-top: 18px;
-    }
-
-    .contenedorsi{
-        display: flex;
-    }
-}
-
-.botonLuna {
-    cursor: pointer;
-}
-
-.textoReceta {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 3px;
-}
-
-.tituloComida {
-    color: white;
-}
-
-.comidaNombre {
-    background-color: rgb(60, 63, 68);
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.comidaHora {
-    background-color: rgba(60, 63, 68, 0.418);
-    padding-left: 15px;
-    padding-right: 15px;
-    width: max-content;
-}
-
-.textoCalorias {
+  .brandActiveX {
+    padding: 20px;
+    color: var(--blanco-primary);
     font-size: 20px;
-   
-}
+    font-weight: 500;
+  }
 
-.checkComida {
-    width: 35px;height: 34px;margin-top: -15px;
-}
+  .ingresaTit {
+    margin-top: -10px;
+    font-size: 55px;
+  }
 
-.nombreRutinaDia {
-    background-color: rgba(0, 0, 0, 0.281);
-    width: max-content;
-    padding-right: 7px;
-    padding-left: 7px;
-}
+  .container-datos {
+    padding-top: 35px;
+  }
+
+  .container-contenidoLogin {
+    padding:30px;
+  }
+
+  .field {
+    width: 100%;
+    height: 57px;
+    border: solid var(--gris-claro);
+    border-radius: 9px;
+    border-width: 1.5px;
+    padding-left: 1em;
+    font-size: 16px;
+  }
+
+  .fieldNombre:focus{
+    border: solid var(--azul-marino);
+    border-width: 1.5px;
+    outline: none;
+  }
+
+  .fieldContraseña:focus{
+    border: solid var(--azul-marino);
+    border-width: 1.5px;
+    outline: none;
+  }
+
+  .olvidoContraseña {
+    color: var(--azul-aqua);
+    font-size: 13px;
+    margin-left: auto;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .btnIngresar {
+    margin-top: 50px;
+    width: 100%;
+    height: 57px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 10px 19px 0 rgba(120, 147, 65, 0.301);
+    background-color: var(--azul-cielo);
+    color: var(--blanco-primary);
+  }
+
+  .btnGoogle {
+    margin-top: 6px;
+    width: 100%;
+    height: 57px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 5px 20px 0 rgba(95, 183, 189, 0.123);
+    background-color: rgb(232, 251, 255);
+    color: var(--azul-aqua);
+  }
+
+  .salySitting {
+    margin-left: 300px;
+    margin-top: 430px;
+  }
+  .prefieresTxt {
+    color: var(--gris-claro);
+    font-weight: 300;
+  }
+  @media (max-width: 1900px) {
+    
+  
+    .container-login {
+      left: 3%; /* Cambiar el left a 10% en pantallas pequeñas y medianas */
+      display: block;
+      width: 90%;
+    }
+
+    .salyDiscover {
+      display: none;
+    }
+
+    .ingresaTit {
+      font-size: 40px;
+    }
+
+    .salySitting{
+      display: none;
+    }
+    
+  }
+
+  @media (max-width: 457) {
+
+    .container-login {
+      left: 3%; /* Cambiar el left a 10% en pantallas pequeñas y medianas */
+      display: block;
+    }
+
+    .salyDiscover {
+      display: none;
+    }
+
+    
+  }
+  
+
+  :root {
+    --blanco-primary: rgb(255, 254, 249);
+    --azul-aqua: rgb(73,167,173);
+    --azul-marino: rgb(66,133,244);
+    --azul-cielo: rgb(111,206,227);
+    --gris-claro: rgb(171,171,171);
+  }
+  
