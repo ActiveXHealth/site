@@ -104,6 +104,10 @@ body {
         padding-left: 10%;
     }
 
+    .containerBtns {
+        justify-content: center;
+    }
+
 }
 
 
