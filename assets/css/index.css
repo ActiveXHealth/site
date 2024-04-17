@@ -1,5 +1,6 @@
 body {
     font-family: "Poppins", sans-serif;
+    margin: 0;
 }
 
 .btnSignIn {
@@ -8,12 +9,12 @@ body {
     font-size: 16;
 }
 
-.btnSignUp{
+.btnSignUp {
     border-radius: 15px;
     color: white;
     background-color: var(--azul);
     border: none;
-    box-shadow:2px 3px 5px rgba(82, 82, 82, 0.377);
+    box-shadow: 2px 3px 5px rgba(82, 82, 82, 0.377);
 }
 
 .sesionBtns {
@@ -27,6 +28,7 @@ body {
 }
 
 .btnTemaOscuro {
+    cursor: pointer;
     border: none;
     background-color: transparent;
     margin-left: 10px;
@@ -38,7 +40,10 @@ body {
 }
 
 .containerPresentacion {
-    background-image: linear-gradient(to bottom, var(--azul), rgb(62,132,136));
+    background-image: linear-gradient(to bottom, var(--azul), rgb(62, 132, 136));
+    padding: 0; /* Eliminar el padding */
+    margin: 0; /* Eliminar el margen */
+    width: 100vw; /* Establecer el ancho en viewport width */
 }
 
 .saly1 {
@@ -50,12 +55,11 @@ body {
 }
 
 .presentacion {
-    font-family: "Poppins", sans-serif; 
+    font-family: "Poppins", sans-serif;
     font-size: 61px;
     color: var(--blanco-primary);
     width: 100%; /* Cambia el ancho fijo por uno relativo */
 }
-
 
 .colPresentacion .presentacion::first-word {
     color: blue;
@@ -67,7 +71,14 @@ body {
     background-color: var(--morado-intermedio);
     border: none;
     font-size: 16px;
-    box-shadow:2px 3px 5px rgba(82, 82, 82, 0.377);
+    box-shadow: 2px 3px 5px rgba(82, 82, 82, 0.377);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.info1 {
+    width: 650px;
+    text-align: start;
 }
 
 .primerPalabra {
@@ -75,44 +86,114 @@ body {
 }
 
 .btnMasInfo {
-        border-radius: 20px;
-        color: var(--morado-intermedio);
-        font-weight: 500;
-        background-color: var(--blanco-primary);
-        border: none;
-        font-size: 16px;
-        box-shadow:2px 3px 5px rgba(82, 82, 82, 0.377);
+    border-radius: 20px;
+    color: var(--morado-intermedio);
+    font-weight: 500;
+    background-color: var(--blanco-primary);
+    border: none;
+    font-size: 16px;
+    box-shadow: 2px 3px 5px rgba(82, 82, 82, 0.377);
+    padding-left: 30px;
+    padding-right: 30px;
 }
-@media (max-width: 1500px){
+
+@media (max-width: 1720px) {
+    .saly1 {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1380px) {
     .colSaly1 {
         display: none;
     }
+
     .saly1 {
         display: none;
     }
+
     .colPresentacion {
-        background-image: linear-gradient(to bottom, var(--azul), rgb(62,132,136));
+        background-image: linear-gradient(to bottom, var(--azul), rgb(62, 132, 136));
         width: 100%;
         padding-top: 30px;
+    }
+
+    .colPresentacion .presentacion {
+        text-align: center;
     }
 
     .containerPresentacion {
         width: 100%;
     }
-    .presentacion{
+
+    .presentacion {
         font-size: 40px;
         padding-left: 10%;
     }
 
-    .containerBtns {
-        justify-content: center;
+    .info1 {
+        width: 100%;
+        text-align: center;
     }
 
+    .containerBtns {
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
 }
 
+@media (max-width: 406px) {
+    .colSaly1 {
+        display: none;
+    }
+
+    .saly1 {
+        display: none;
+    }
+
+    .colPresentacion {
+        background-image: linear-gradient(to bottom, var(--azul), rgb(62, 132, 136));
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .colPresentacion .presentacion {
+        text-align: center;
+    }
+
+    .containerPresentacion {
+        width: 100%;
+    }
+
+    .presentacion {
+        font-size: 40px;
+        padding-left: 10%;
+    }
+
+    .info1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .containerBtns {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .btnEmpiezaAhora,
+    .btnMasInfo {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .containerBtns {
+        padding-bottom: 20px;
+    }
+}
 
 :root {
     --azul: rgb(87, 183, 189);
     --blanco-primary: rgb(248, 249, 255);
-    --morado-intermedio: rgb(148,119,231);
+    --morado-intermedio: rgb(148, 119, 231);
 }
