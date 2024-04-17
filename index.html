@@ -43,7 +43,7 @@
                     </li>
                 </ul>
                 <div class="sesionBtns">
-                    <a class="btn btnSignIn mx-3" href="login.html" role="button" rel="noreferrer">Sign in</a>
+                    <a class="btn btnSignIn mx-3" id="btnUno"  href="login.html" role="button" rel="noreferrer">Sign in</a>
                     <button class="btnSignUp px-3 py-2" type="submit">Sign up</button>
                     <button onclick="modoOscuro()" class="btn btnTemaOscuro"><img class="imgLuna" src="assets/img/moon.png" alt=""></button>
                 </div>
@@ -52,8 +52,8 @@
     </nav>
 
     
-    <!--ESLOGAN-->
-        <div class="container-fluid containerPresentacion row justify-content-center">
+    <!--PRESENTACIÓN-->
+        <div class="container-fluid containerPresentacion row justify-content-center" id="containerPresentacion">
             <div class="col-xl-7 col-md-6 col-sm-3  colSaly">
                 <img class="saly1" src="assets/img/saly1.png" alt="">
             </div>
@@ -75,6 +75,27 @@
                 </div>
             </div>
         </div>
+
+    <!--CARACTERÍSTICAS-->
+            <div class="container-fluid containerComienza justify-content-center">
+                <div class="containerVentajas w-100">
+                    <h5 class="mt-5 text-center mb-5">Comienza a utilizar ActiveX</h5>
+                <div class="container-fluid d-flex row containerV" style="gap: 10vw;max-width: 100%;">
+                    <div class="col-xl col-sm-12 " style="margin-left: 14%;">
+                        <img class="v" src="assets/img/v1.png">
+                        <p>Entrenadores <br><span>certificados</span></p>
+                    </div>
+                    <div class="col-xl col-sm-12">
+                        <img class="v" src="assets/img/v2.png">
+                        <p>Seguimiento <br><span>de objetivos</span></p>
+                    </div>
+                    <div class="col-xl col-sm-12">
+                        <img class="v" src="assets/img/v3.png">
+                        <p>Seguimiento <br><span>de objetivos</span></p>
+                    </div>
+                </div>
+                </div>
+            </div>
       
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

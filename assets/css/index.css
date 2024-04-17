@@ -46,6 +46,12 @@ body {
     width: 100vw; /* Establecer el ancho en viewport width */
 }
 
+.containerComienza {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
 .saly1 {
     padding-left: 12%;
 }
@@ -97,6 +103,10 @@ body {
     padding-right: 30px;
 }
 
+.containerComienza {
+    background-color:var(--blanco-primary);
+}
+
 @media (max-width: 1720px) {
     .saly1 {
         margin-top: 50px;
@@ -140,6 +150,12 @@ body {
         justify-content: center;
         width: 100%;
         padding-bottom: 20px;
+    }
+}
+
+@media (max-width:540px){
+    .containerV .v {
+        width: 60%;
     }
 }
 
