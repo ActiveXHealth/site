@@ -1,8 +1,22 @@
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
+    padding: 0;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(207, 135, 0);  /* creates padding around scroll thumb */
+  }
 .btnSignIn {
     color: var(--azul);
     text-decoration: none;
@@ -43,7 +57,7 @@ body {
     background-image: linear-gradient(to bottom, var(--azul), rgb(62, 132, 136));
     padding: 0; /* Eliminar el padding */
     margin: 0; /* Eliminar el margen */
-    width: 100vw; /* Establecer el ancho en viewport width */
+    width: 100%; /* Establecer el ancho en viewport width */
 }
 
 .containerComienza {
@@ -154,9 +168,7 @@ body {
 }
 
 @media (max-width:540px){
-    .containerV .v {
-        width: 60%;
-    }
+    
 }
 
 @media (max-width: 450px) {
