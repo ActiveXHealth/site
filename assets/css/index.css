@@ -1,27 +1,31 @@
+/* Estilos generales */
 body {
+    width: 100%;
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Estilos de la barra de desplazamiento */
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-}
-  
-body::-webkit-scrollbar-track {
-    background: orange;        /* color of the tracking area */
-}
-  
-body::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid rgb(207, 135, 0);  /* creates padding around scroll thumb */
+    width: 12px;
 }
 
+body::-webkit-scrollbar-track {
+    background: var(--azul);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: 3px solid var(--azul);
+}
+
+/* Estilos de los botones */
 .btnSignIn {
     color: var(--azul);
     text-decoration: none;
-    font-size: 16;
+    font-size: 16px;
 }
 
 .btnSignUp {
@@ -35,13 +39,14 @@ body::-webkit-scrollbar-thumb {
 .sesionBtns {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-style: normal;
 }
 
+/* Estilos de la barra de navegación */
 .navbarsita {
     background-color: var(--blanco-primary);
 }
 
+/* Estilos del botón de cambio de tema */
 .btnTemaOscuro {
     cursor: pointer;
     border: none;
@@ -54,16 +59,17 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 2.5px;
 }
 
+/* Estilos del contenedor de presentación */
 .containerPresentacion {
     background-image: linear-gradient(to bottom, var(--azul), rgb(62, 132, 136));
-    padding: 0; /* Eliminar el padding */
-    margin: 0; /* Eliminar el margen */
-    width: 100%; /* Establecer el ancho en viewport width */
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .containerComienza {
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    justify-content: center;
+    align-items: center;
 }
 
 .saly1 {
@@ -78,11 +84,7 @@ body::-webkit-scrollbar-thumb {
     font-family: "Poppins", sans-serif;
     font-size: 61px;
     color: var(--blanco-primary);
-    width: 100%; /* Cambia el ancho fijo por uno relativo */
-}
-
-.colPresentacion .presentacion::first-word {
-    color: blue;
+    width: 100%;
 }
 
 .btnEmpiezaAhora {
@@ -117,16 +119,35 @@ body::-webkit-scrollbar-thumb {
     padding-right: 30px;
 }
 
+/* Estilos de los contenedores y elementos */
 .containerComienza {
-    background-color:var(--blanco-primary);
+    background-color: var(--blanco-primary);
 }
 
 .containerVentajas {
     display: flex;
     margin: auto;
-  justify-content: space-between;
-  align-content: space-between;
-  justify-items: auto;
+    justify-content: space-between;
+    align-content: space-between;
+    justify-items: auto;
+    position: relative;
+    max-width: 100%;
+}
+
+.contImg {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titVentajas {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.subtitVentajas {
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .containerVentajas p {
@@ -139,6 +160,7 @@ body::-webkit-scrollbar-thumb {
     border: 0;
 }
 
+/* Media queries */
 @media (max-width: 1720px) {
     .saly1 {
         margin-top: 50px;
@@ -146,10 +168,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 1380px) {
-    .colSaly1 {
-        display: none;
-    }
-
+    .colSaly1,
     .saly1 {
         display: none;
     }
@@ -182,18 +201,12 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
         width: 100%;
         padding-bottom: 20px;
+        gap: 10px;
     }
-}
-
-@media (max-width:540px){
-    
 }
 
 @media (max-width: 450px) {
-    .colSaly1 {
-        display: none;
-    }
-
+    .colSaly1,
     .saly1 {
         display: none;
     }
@@ -226,6 +239,8 @@ body::-webkit-scrollbar-thumb {
     .containerBtns {
         justify-content: center;
         width: 100%;
+        padding-bottom: 20px;
+        gap: 10px;
     }
 
     .btnEmpiezaAhora,
@@ -233,13 +248,32 @@ body::-webkit-scrollbar-thumb {
         padding-left: 15px;
         padding-right: 15px;
     }
+}
 
-    .containerBtns {
-        padding-bottom: 20px;
-        gap: 10px;
+@media (max-width: 540px) {
+    .v {
+        width: 50%;
+    }
+    .titVentajas {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .subtitVentajas {
+        font-size: 10px;
+        font-weight: 400;
+    }
+}
+/*BREAKPOINT TABLET*/
+@media (max-width: 768px) {
+    .info1 {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
     }
 }
 
+/* Variables de color */
 :root {
     --azul: rgb(87, 183, 189);
     --blanco-primary: rgb(248, 249, 255);
