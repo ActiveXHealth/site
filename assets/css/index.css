@@ -8,17 +8,18 @@ body {
 
 /* Estilos de la barra de desplazamiento */
 body::-webkit-scrollbar {
-    width: 12px;
+    width: 18px;
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--azul);
+    background: var(--blanco-primary);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0);
-    border-radius: 8px;
-    border: 3px solid var(--azul);
+    background-color: var(--azul);
+    
+    border-radius: 2px;
+    border: 3px solid var(--blanco-primary);
 }
 
 /* Estilos de los botones */
@@ -160,6 +161,31 @@ body::-webkit-scrollbar-thumb {
     border: 0;
 }
 
+.containerPorque {
+    background-image: linear-gradient(  to right,rgb(42,214,222), rgb(15,170,180));
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.infoPorque {
+    background-color: rgb(121,49,212);
+    border-radius: 20px;
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    width: 80%;
+}
+
+.pInfoPorque {
+    text-align: center;
+    font-size: 20px;
+    padding-right: 5%;
+}
+
+.infoPorque .img {
+    padding: 3%;
+}
+
 /* Media queries */
 @media (max-width: 1720px) {
     .saly1 {
@@ -172,9 +198,7 @@ body::-webkit-scrollbar-thumb {
     .saly1 {
         display: none;
     }
-
     .colPresentacion {
-        background-image: linear-gradient(to bottom, var(--azul), rgb(62, 132, 136));
         width: 100%;
         padding-top: 30px;
     }
@@ -204,7 +228,11 @@ body::-webkit-scrollbar-thumb {
         gap: 10px;
     }
 }
-
+@media (max-width: 1100px){
+    .circulos {
+        display: none;
+    }
+}
 @media (max-width: 450px) {
     .colSaly1,
     .saly1 {
@@ -212,7 +240,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .colPresentacion {
-        background-image: linear-gradient(to bottom, var(--azul), rgb(62, 132, 136));
+        
         width: 100%;
         padding-top: 30px;
     }
@@ -250,7 +278,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
     .v {
         width: 50%;
     }
@@ -264,6 +292,7 @@ body::-webkit-scrollbar-thumb {
         font-weight: 400;
     }
 }
+
 /*BREAKPOINT TABLET*/
 @media (max-width: 768px) {
     .info1 {
